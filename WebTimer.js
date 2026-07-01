@@ -11,7 +11,7 @@ const fullscreenText = document.getElementById("fullscreen-text");
 const container = document.getElementById("fullscreen-container");
 const img = document.getElementById("screen");
 const ctnScreen = document.getElementById("ctn-screen");
-const alarm = new Audio("alarm.mp3");
+const alarm = new Audio("audio/alarm.mp3");
 alarm.loop = true;
 
 let initialTime;
@@ -258,7 +258,7 @@ fullscreen.addEventListener("click", () => {
         ctnScreen.requestFullscreen()
             .then(() => {
                 fullscreenText.textContent = "Exit Fullscreen";
-                img.src = "exit-fullscreen.png";
+                img.src = "images/exit-fullscreen.png";
             })
             .catch(err => {
                 alert(`Error attempting to enable full-screen mode: ${err.message}`);
@@ -268,19 +268,19 @@ fullscreen.addEventListener("click", () => {
     else {
         document.exitFullscreen();
         fullscreenText.textContent = "Fullscreen"
-        img.src = "fullscreen.png"
+        img.src = "images/fullscreen.png"
     }
 });
 
 document.addEventListener("fullscreenchange", () => {
     if (document.fullscreenElement) {
         fullscreenText.textContent = "Exit Fullscreen";
-        img.src = "exit-fullscreen.png";
+        img.src = "images/exit-fullscreen.png";
     }
 
     else {
         fullscreenText.textContent = "Fullscreen"
-        img.src = "fullscreen.png"
+        img.src = "images/fullscreen.png"
     }
 })
 
@@ -298,7 +298,7 @@ document.addEventListener("keydown", (event) => {
 
             .then(() => {
                 fullscreenText.textContent = "Exit Fullscreen";
-                img.src = "exit-fullscreen.png";
+                img.src = "images/exit-fullscreen.png";
             })
             .catch(err => {
                 alert(`Error attempting to enable full-screen mode: ${err.message}`);
@@ -308,7 +308,7 @@ document.addEventListener("keydown", (event) => {
     else {
         document.exitFullscreen();
         fullscreenText.textContent = "Fullscreen"
-        img.src = "fullscreen.png"
+        img.src = "images/fullscreen.png"
     }
 
 })
