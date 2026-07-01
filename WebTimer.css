@@ -1,0 +1,142 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+
+#start,
+#pause,
+#resume,
+#reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 6px 20px;
+    font-size: 24px;
+    border: 3px solid light grey;
+    border-radius: 10px;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#start:hover,
+#pause:hover,
+#resume:hover,
+#reset:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 3vh;
+    width: 100%;
+}
+
+#hrs, #mins, #sec {
+    height: 100%;
+    width: 5%;
+    font-size: 24px;
+    border: 5px solid white;
+    border-radius: 12px;
+    background-color: white;
+}
+
+#timer-display {
+    font-size: 170px;
+    color: white;
+}
+
+#info-btn, #git-btn, #fullscreen-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6px, 15px;
+    font-size: 21.5px;
+    background-color: transparent;
+    color: white;
+    border: 1px;
+    border-color: #141414;
+    margin-top: 10px;
+}
+
+#info-btn:hover {
+    transform: scale(1.125);
+}
+
+#about {
+    display: flex;
+    background-color: white;
+    width: 70px;
+    height: 26px;
+    margin-right: -20px;
+    margin-left: -6.5px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-start;
+    gap: -35px;
+    align-items: flex-start;
+    padding: 10px;
+    height: 50px;
+}
+
+#abt-btn, #git-link {
+    text-decoration: none;
+}
+
+#git-btn:hover, #fullscreen-btn:hover {
+    transform: scale(1.1)
+}
+
+#github {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: -8px;
+}
+
+.screen-btn {
+    display: flex;
+    height: 4vh;
+    width: 1640px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#screen {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+
+#ctn-screen:fullscreen #fullscreen-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#ctn-screen {
+    position: relative;
+}
+
+#fullscreen-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+    
+#ctn-screen:fullscreen #timer-display {
+    font-size: 370px;
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Timer App</title>
+    <link rel="stylesheet" href="WebTimer.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <a href="RedirectTimer.html" id="abt-btn">
+            <button id="info-btn">
+                <img src="info.png" id="about">
+                About
+            </button>
+        </a>
+        <a href="https://github.com/zeus495" id="git-link">
+            <button id="git-btn">
+                <img src="github.jpeg" id="github">
+                Github
+            </button>
+        </a>
+
+
+    </div>
+
+
+    <h1>Focus Timer</h1>
+    <h2>Enter the duration of the timer:</h2>
+    <div class="flex-container">
+        <input type="number" id="hrs" placeholder="HH">
+        <span>:</span>
+        <input type="number" id="mins" placeholder="MM">
+        <span>:</span>
+        <input type="number" id="sec" placeholder="SS">
+    </div>
+
+    <div id="ctn-screen">
+        <div class="screen-btn" id="fullscreen-container">
+            <button id="fullscreen-btn">
+                <img src="fullscreen.png" id="screen">
+                <span id="fullscreen-text">
+                    Fullscreen
+                </span>
+            </button>
+        </div>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="resume">Resume</button>
+        <button id="reset">Reset</button>
+
+
+        <h2 id="timer-display"></h2>
+    </div>
+    <script src="WebTimer.js"></script>
+
+</body>
+
+</html>
